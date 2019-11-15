@@ -1,7 +1,6 @@
 #include <Arduino.h>
 #include <CayenneMQTTESP32.h>
 #include <OneWire.h>
-#include <CayenneMQTTWiFiClient.h>
 
 //#define CAYENNE_DEBUG
 #define CAYENNE_PRINT Serial
@@ -16,6 +15,20 @@ char password[] = "167890b2262ec5c2fa0aaf340e58bd6c041b0b73";
 char clientID[] = "b3f37c50-063a-11ea-8221-599f77add412";
 
 unsigned long lastMillis = 0;
+
+
+////////////////
+//    LEDs    //
+////////////////
+const int BLUE_LED = 25;
+const int RED_LED = 26;
+const int YELLOW_LED = 27;
+const int GREEN_LED = 14;
+
+String BLUE_BUTTON_STATE;
+String RED_BUTTON_STATE;
+String YELLOW_BUTTON_STATE;
+String GREEN_BUTTON_STATE;
 
 //------***** (Tempertaure/ Humidity Sensor)-------------------------
 #include <DHTesp.h>
@@ -79,7 +92,7 @@ void loop() {
 		Cayenne.virtualWrite(0, temperature, TYPE_TEMPERATURE, UNIT_CELSIUS);
     Cayenne.virtualWrite(1, temperature_F, TYPE_TEMPERATURE, UNIT_FAHRENHEIT);
 		Cayenne.virtualWrite(2, humidity, "humidity", UNIT_PERCENT);
-		Cayenne.virtualWrite(4, espTemperature, "esptemperature", "UNIT_CELSIUS");
+		Cayenne.virtualWrite(4, espTemperature, "esptemperature", UNIT_CELSIUS);
 	}
 
 }
@@ -100,5 +113,61 @@ CAYENNE_OUT_DEFAULT()
 CAYENNE_IN_DEFAULT()
 {
 	CAYENNE_LOG("Channel %u, value %s", request.channel, getValue.asString());
+	//Process message here. If there is an error set an error message using getValue.setError(), e.g getValue.setError("Error message");
+}
+CAYENNE_IN(4)
+{
+	CAYENNE_LOG("Channel %u, value %s", request.channel, getValue.asString());
+	BLUE_BUTTON_STATE = getValue.asString();
+	if (BLUE_BUTTON_STATE == "1")
+	{
+		digitalWrite(BLUE_LED, HIGH);
+	}
+	else
+	{
+		digitalWrite(BLUE_LED, LOW);
+	}
+	//Process message here. If there is an error set an error message using getValue.setError(), e.g getValue.setError("Error message");
+}
+CAYENNE_IN(5)
+{
+	CAYENNE_LOG("Channel %u, value %s", request.channel, getValue.asString());
+	RED_BUTTON_STATE = getValue.asString();
+	if (RED_BUTTON_STATE == "1")
+	{
+		digitalWrite(RED_LED, HIGH);
+	}
+	else
+	{
+		digitalWrite(RED_LED, LOW);
+	}
+	//Process message here. If there is an error set an error message using getValue.setError(), e.g getValue.setError("Error message");
+}
+CAYENNE_IN(6)
+{
+	CAYENNE_LOG("Channel %u, value %s", request.channel, getValue.asString());
+	YELLOW_BUTTON_STATE = getValue.asString();
+	if (YELLOW_BUTTON_STATE == "1")
+	{
+		digitalWrite(YELLOW_LED, HIGH);
+	}
+	else
+	{
+		digitalWrite(YELLOW_LED, LOW);
+	}
+	//Process message here. If there is an error set an error message using getValue.setError(), e.g getValue.setError("Error message");
+}
+CAYENNE_IN(7)
+{
+	CAYENNE_LOG("Channel %u, value %s", request.channel, getValue.asString());
+	GREEN_BUTTON_STATE = getValue.asString();
+	if (GREEN_BUTTON_STATE == "1")
+	{
+		digitalWrite(GREEN_LED, HIGH);
+	}
+	else
+	{
+		digitalWrite(GREEN_LED, LOW);
+	}
 	//Process message here. If there is an error set an error message using getValue.setError(), e.g getValue.setError("Error message");
 }
