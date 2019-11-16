@@ -6,13 +6,13 @@
 #define CAYENNE_PRINT Serial
 
 // WiFi network info.
-char ssid[] = "Bahu";
-char wifiPassword[] = "anders070";
+char ssid[] = "SSID";
+char wifiPassword[] = "PASSWORD";
 
 // Cayenne authentication info. This should be obtained from the Cayenne Dashboard.
-char username[] = "7960fec0-0633-11ea-a4a3-7d841ff78abf";
-char password[] = "167890b2262ec5c2fa0aaf340e58bd6c041b0b73";
-char clientID[] = "b3f37c50-063a-11ea-8221-599f77add412";
+char username[] = "CAYENNE MQTT USERNAME";
+char password[] = "CAYENNE MQTT PASSWORD";
+char clientID[] = "CAYENNE CLIENT ID";
 
 unsigned long lastMillis = 0;
 
