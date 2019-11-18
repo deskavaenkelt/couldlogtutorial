@@ -2,8 +2,8 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
 
-const char* ssid = "Bahu";    // name of your wifi network!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-const char* password = "anders070";     // wifi pasword !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+const char* ssid = "Enter your wifi ssid";    // name of your wifi network!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+const char* password = "Enter your wifi password";     // wifi pasword !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 const char* host = "script.google.com";
 const int httpsPort = 443; 

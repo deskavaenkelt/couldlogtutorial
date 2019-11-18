@@ -1,0 +1,1 @@
+This example is for DHT11 sensor connected to esp32 pin D15
