@@ -1,6 +1,8 @@
 <article>
     <h1>Cayenne tutorials</h1>
     <p>More information is provided in the separate projects</p>
+    <p>Detailed tutorial for DHT sensors </br>
+    https://lastminuteengineers.com/esp32-dht11-dht22-web-server-tutorial/ </p>
 </article>
 <article>
     <h2>Common prerequisites for all projects</h2>
