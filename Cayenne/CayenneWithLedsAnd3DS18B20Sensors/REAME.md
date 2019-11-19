@@ -26,7 +26,7 @@
         <li>4x resistors for the LEDs</li>
     </ul>
     <img src="layout.png" alt="schematics of breadboard">
-    <h4 style="color: red">Note, The schematics may not be 100% accurate, verify with data sheet for you'r components</h4>
+    <h4>Note, The schematics may not be 100% accurate, verify with data sheet for you'r components</h4>
 </article>
 <article>
     <h2>How to use</h2>
