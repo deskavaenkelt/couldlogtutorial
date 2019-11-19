@@ -81,7 +81,8 @@ void loop()
 	{
 		lastMillis = millis();
 
-		Cayenne.virtualWrite(0, Temperature, "temp", "c");
+		Cayenne.celsiusWrite(0, Temperature);
+		// Cayenne.virtualWrite(0, Temperature, "temp", "c");
 		Cayenne.virtualWrite(1, Humidity, "rel_hum", "p");
 		Cayenne.virtualWrite(2, espTemperature, "temp", "c");
 		Cayenne.virtualWrite(3, espHallSensorValue, "mag", "tesla");

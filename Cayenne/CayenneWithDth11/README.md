@@ -20,6 +20,7 @@
 <article>
     <h2>How to use</h2>
     <p>Start by adding the libraries to PlatformIO in VSCode, then restart VSCode.</p>
+    <p>The code is configured to send data every 5sek.</p>
     <p>Download the code and unzip, open the folder in VSCode. Test to build the code to confirm that the libraries are imported correctly.</p>
     <ul>
         <li>Connect your board to your computer</li>
