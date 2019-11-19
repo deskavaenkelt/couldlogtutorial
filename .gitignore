@@ -155,3 +155,5 @@ $RECYCLE.BIN/
 
 # End of https://www.gitignore.io/api/macos,windows,jetbrains+all,visualstudiocode
 .vscode
+auth1.h
+.pio

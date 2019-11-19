@@ -16,6 +16,7 @@
         <li><a href="https://platformio.org/lib/show/31/Adafruit%20Unified%20Sensor?utm_source=platformio&utm_medium=piohome">Adafruit Unified Sensor</a> by Adafruit</li>
         <li><a href="https://platformio.org/lib/show/19/DHT%20sensor%20library?utm_source=platformio&utm_medium=piohome">DHT sensor library</a> by Adafruit</li>
     </ul>
+    <img src="layout.png" alt="schematics of breadboard">
 </article>
 <article>
     <h2>How to use</h2>
