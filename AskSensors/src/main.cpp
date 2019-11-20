@@ -17,9 +17,9 @@ WiFiMulti WiFiMulti;
 HTTPClient ask;
 
 // user config: TODO
-const char* ssid = "Bahu";             // SSID
-const char* password = "anders070";         // WIFI
-const char* apiKeyIn = "otthNo1ttVwKPDmXG0ivfNMbJ7vr2Mwh";      // API KEY IN
+const char* ssid = "................";             // SSID Enter your wifi ssid here
+const char* password = "..............";         // WIFI Enter your wifi password here
+const char* apiKeyIn = ".............";      // API KEY IN e.g otthNo1ttVwKPDmXG0ivfNMbJ7vr2Mwh from AskSensor
 const unsigned int writeInterval = 2500; // write interval (in ms)
 
 // ASKSENSORS config.
