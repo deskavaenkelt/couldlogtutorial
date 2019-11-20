@@ -1,8 +1,6 @@
 <article>
     <h1>Cayenne tutorials</h1>
     <p>More information is provided in the separate projects</p>
-    <p>Detailed tutorial for DHT sensors </br>
-    https://lastminuteengineers.com/esp32-dht11-dht22-web-server-tutorial/ </p>
 </article>
 <article>
     <h2>Common prerequisites for all projects</h2>
@@ -10,6 +8,11 @@
     <ul>
         <li><a href="https://platformio.org/lib/show/1451/Cayenne-MQTT-ESP">Cayenne-MQTT-ESP32</a></li>
     </ul>
+    <p>Detailed tutorial for DHT sensors</p>
+    <ul>
+        <li><a href="https://lastminuteengineers.com/esp32-dht11-dht22-web-server-tutorial/">lastminuteengineers.com</a></li>
+    </ul>
+        
 </article>
 <article>
     <h2>Cayenne setup</h2>
