@@ -1,28 +1,30 @@
 <article>
-    <h1>Cayenne tutorial on LOLIN32</h1>
+    <h1>Cayenne tutorial on ESP32-Dev-Kit C</h1>
     <p>I used LOLIN32 for this project, if you use some other devices just change or add the board to platformio.ini.</p>
     <p>Links</p>
     <ul>
         <li><a href="https://developers.mydevices.com/cayenne/docs/cayenne-mqtt-api/">Cayenne MQTT API</a></li>
         <li><a href="https://community.mydevices.com/t/data-types-for-cayenne-mqtt-api/3714">Data types</a> for Cayenne MQTT API</li>
-        <li><a href="https://wiki.wemos.cc/products:lolin32:lolin32">LOLIN32</a> at WEMOS</li>
-        <li><a href="https://docs.platformio.org/en/latest/boards/espressif32/lolin32.html">LOLIN32</a> at PlatformIO</li>
+        <li><a href="https://docs.platformio.org/en/latest/boards/espressif32/fm-devkit.html">ESP32 DevKit C</a> at PlatformIO</li>
     </ul>
 </article>
 <article>
     <h2>Prerequisites</h2>
     <p>Libraries in PlatformIO</p>
     <ul>
-        <li><a href="https://platformio.org/lib/show/31/Adafruit%20Unified%20Sensor?utm_source=platformio&utm_medium=piohome">Adafruit Unified Sensor</a> by Adafruit</li>
-        <li><a href="https://platformio.org/lib/show/19/DHT%20sensor%20library?utm_source=platformio&utm_medium=piohome">DHT sensor library</a> by Adafruit</li>
+        <li><a href="https://platformio.org/lib/show/1/OneWire?utm_source=platformio&utm_medium=piohome">OneWire</a> Control 1-Wire protocol (DS18S20, DS18B20, DS2408 and etc)</li>
+        <li><a href="https://platformio.org/lib/show/54/DallasTemperature?utm_source=platformio&utm_medium=piohome">DallasTemperature</a> Arduino Library for Dallas Temperature ICs (DS18B20, DS18S20, DS1822, DS1820)</li>
     </ul>
     <p>Components</p>
-        <ul>
-            <li>ESP32 board</li>
-            <li>Breadboard</li>
-            <li>Cables</li>
-            <li>1x DTH11</li>
-        </ul>
+    <ul>
+        <li>ESP32 board</li>
+        <li>Breadboard</li>
+        <li>Cables</li>
+        <li>3x DS18B20 Sensors (I used the waterproof model)</li>
+        <li>1x resistor for pull-up</li>
+        <li>4x LEDs (I used one of each: , blue, red, yellow, green)</li>
+        <li>4x resistors for the LEDs</li>
+    </ul>
     <img src="layout.png" alt="schematics of breadboard">
     <h4>Note, The schematics may not be 100% accurate, verify with data sheet for you'r components</h4>
 </article>
