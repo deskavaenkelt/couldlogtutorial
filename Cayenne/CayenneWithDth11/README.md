@@ -1,43 +1,48 @@
-<article>
-    <h1>Cayenne tutorial on LOLIN32</h1>
-    <p>I used LOLIN32 for this project, if you use some other devices just change or add the board to platformio.ini.</p>
-    <p>Links</p>
-    <ul>
-        <li><a href="https://developers.mydevices.com/cayenne/docs/cayenne-mqtt-api/">Cayenne MQTT API</a></li>
-        <li><a href="https://community.mydevices.com/t/data-types-for-cayenne-mqtt-api/3714">Data types</a> for Cayenne MQTT API</li>
-        <li><a href="https://wiki.wemos.cc/products:lolin32:lolin32">LOLIN32</a> at WEMOS</li>
-        <li><a href="https://docs.platformio.org/en/latest/boards/espressif32/lolin32.html">LOLIN32</a> at PlatformIO</li>
-    </ul>
-</article>
-<article>
-    <h2>Prerequisites</h2>
-    <p>Libraries in PlatformIO</p>
-    <ul>
-        <li><a href="https://platformio.org/lib/show/31/Adafruit%20Unified%20Sensor?utm_source=platformio&utm_medium=piohome">Adafruit Unified Sensor</a> by Adafruit</li>
-        <li><a href="https://platformio.org/lib/show/19/DHT%20sensor%20library?utm_source=platformio&utm_medium=piohome">DHT sensor library</a> by Adafruit</li>
-    </ul>
-    <p>Components</p>
-        <ul>
-            <li>ESP32 board</li>
-            <li>Breadboard</li>
-            <li>Cables</li>
-            <li>1x DTH11</li>
-        </ul>
-    <img src="layout.png" alt="schematics of breadboard">
-    <h4>Note, The schematics may not be 100% accurate, verify with data sheet for you'r components</h4>
-</article>
-<article>
-    <h2>How to use</h2>
-    <p>Start by adding the libraries to PlatformIO in VSCode, then restart VSCode.</p>
-    <p>The code is configured to send data every 5sek.</p>
-    <p>Download the code and unzip, open the folder in VSCode. Test to build the code to confirm that the libraries are imported correctly.</p>
-    <ul>
-        <li>Connect your board to your computer</li>
-        <li>In the left tab in VSCode click on The PlatformIO icon.</li>
-        <li>Click Devices and copy the address that corresponds to your board (Windows "ComX", Mac "/dev/cu.xxx"</li>
-        <li>Replace the port address on row 18 in platformio.ini</li>
-        <li>Then click "Upload and Monitor"</li>
-    </ul>
-    <p>The ESP32 should connect to the Cayenne service if your network credentials are valid.</p>
-    <p>If there is any errors, check the console for error messages to solve them.</p>
-</article>
+# Cayenne tutorial on LOLIN32
+I used LOLIN32 for this project, if you use some other devices just change or add the board to platformio.ini.
+
+Links
+* [Cayenne MQTT API][Cayenne MQTT API]
+* [Data types][Data types] for Cayenne MQTT API
+* [LOLIN32][at WEMOS] at WEMOS
+* [LOLIN32][at PlatformIO] at PlatformIO
+
+## Prerequisites
+Libraries in PlatformIO
+* [Adafruit Unified Sensor][Adafruit Unified Sensor] by Adafruit
+* [DHT sensor library][DHT sensor library] by Adafruit
+
+Components
+* ESP32 board
+* Breadboard
+* Cables
+* 1x DTH11
+
+Schematics of breadboard
+![layout.png](layout.png)
+
+#### Note
+The schematics may not be 100% accurate, verify with data sheet for you'r components
+
+##How to use
+Start by adding the libraries to PlatformIO in VSCode, then restart VSCode.
+
+The code is configured to send data every 5sek.
+
+Download the code and unzip, open the folder in VSCode. Test to build the code to confirm that the libraries are imported correctly.
+* Connect your board to your computer
+* In the left tab in VSCode click on The PlatformIO icon.
+* Click Devices and copy the address that corresponds to your board (Windows `COMX`, Mac `/dev/cu.xxx`
+* Replace the port address on row 18 in platformio.ini
+* Then click `Upload and Monitor`
+
+The ESP32 should connect to the Cayenne service if your network credentials are valid.
+
+If there is any errors, check the console for error messages to solve them.
+
+[Cayenne MQTT API]: https://developers.mydevices.com/cayenne/docs/cayenne-mqtt-api/
+[Data types]: https://community.mydevices.com/t/data-types-for-cayenne-mqtt-api/3714
+[at WEMOS]: https://wiki.wemos.cc/products:lolin32:lolin32
+[at PlatformIO]: https://docs.platformio.org/en/latest/boards/espressif32/lolin32.html
+[Adafruit Unified Sensor]: https://platformio.org/lib/show/31/Adafruit%20Unified%20Sensor?utm_source=platformio&utm_medium=piohome
+[DHT sensor library]: https://platformio.org/lib/show/19/DHT%20sensor%20library?utm_source=platformio&utm_medium=piohome
