@@ -1,16 +1,21 @@
 # Cloudlog Tutorial
-Tutorials on how to log data to cloud services (visual data dashboards and analysis tools) with esp32
+Tutorials on how to log data to cloud services (visual data dashboards and analysis tools) with esp32.
 
 ## Prerequisites
-Software
+####Software
 * [Visual Studio Code][Visual Studio Code]
 * [PlatformIO][PlatformIO] Search for "Platformio IDE in VSCode Extensions
 
-Drivers (if necessary)
+####Drivers (if necessary)
 * Driver for [CP210x]
 * Driver for [FTDI]
+
+## Whats not covered
+We will not cover how to use [PlatformIO][PlatformIO] since they have good tutorials at their page.
+
 
 [Visual Studio Code]: https://code.visualstudio.com
 [PlatformIO]: https://platformio.org
 [CP210x]: https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
 [FTDI]: https://www.ftdichip.com/Drivers/VCP.htm
+

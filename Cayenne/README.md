@@ -4,6 +4,7 @@ More information is provided in the separate projects
 ## Common prerequisites for all projects
 Libraries in PlatformIO
 * [Cayenne-MQTT-ESP32](https://platformio.org/lib/show/1451/Cayenne-MQTT-ESP)
+* or type `pio lib install "Cayenne-MQTT-ESP"` in terminal
 
 Detailed tutorial for DHT sensors
 * [Detailed tutorial for DHT sensors][tutorialDth11]
