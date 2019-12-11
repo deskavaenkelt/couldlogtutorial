@@ -24,7 +24,7 @@ Schematics of breadboard
 #### Note
 The schematics may not be 100% accurate, verify with data sheet for you'r components.
 
-##How to use
+## How to use
 Start by adding the libraries to PlatformIO in VSCode, then restart VSCode.
 
 The code is configured to send data every 5sek.
